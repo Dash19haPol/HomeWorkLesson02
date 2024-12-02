@@ -1,11 +1,11 @@
-public class Cat extends Animals{
+public class Cat extends Animals {
     private static final int MAX_RUN_DISTANCE = 200;
 
-    private static int catCount = 0;
+    private static int count = 0;
 
     public Cat(String name) {
         super(name);
-        catCount++;
+        count++;
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Cat extends Animals{
         System.out.println(name + " не вміє плавати!");
     }
 
-    public static int getCatCount() {
-        return catCount;
+    public static int getCount() {
+        return count;
     }
 }

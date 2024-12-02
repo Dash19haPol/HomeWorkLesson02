@@ -1,4 +1,4 @@
-public  class Main {
+public abstract class Main {
     public static void main(String[] args) {
         Dog dogBobik = new Dog("Бобік");
         Dog dogMumu = new Dog("Рекс");
@@ -15,9 +15,8 @@ public  class Main {
         catMatroskin.swim(5);
         catBarsik.run(201);
 
-        System.out.println("Кількість собак: " + Dog.getDogCount());
-        System.out.println("Кількість котів: " + Cat.getCatCount());
-        System.out.println("Всього тварин: " + Animals.getAnimalCount());
+        System.out.println("Кількість собак: " + Dog.getCount());
+        System.out.println("Кількість котів: " + Cat.getCount());
+        System.out.println("Всього тварин: " + Animals.getCount());
     }
-
 }

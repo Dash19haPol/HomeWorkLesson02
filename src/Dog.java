@@ -1,12 +1,12 @@
-public class Dog extends Animals{
+public class Dog extends Animals {
     private static final int MAX_RUN_DISTANCE = 500;
     private static final int MAX_SWIM_DISTANCE = 10;
 
-    private static int dogCount = 0;
+    private static int count = 0;
 
     public Dog(String name) {
         super(name);
-        dogCount++;
+        count++;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Dog extends Animals{
         }
     }
 
-    public static int getDogCount() {
-        return dogCount;
+    public static int getCount() {
+        return count;
     }
 }
